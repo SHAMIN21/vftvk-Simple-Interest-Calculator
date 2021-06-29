@@ -8,23 +8,20 @@ function compute()
        
     if (p < 1) {
     	alert ("Please input a positive number");
+    	document.getElementById("principal").focus();
     	return false;
     }   
 
     else
     	{
-    		document.getElementById("result").innerHTML="If you deposit " +p+  ",\<br\>at an interest rate of "+rate+" %\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>";
+    		document.getElementById("result").innerHTML="If you deposit "  +p+ ",\<br\>at an interest rate of "+rate+" %\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year+"\<br\>";
     		return false;
     	}
+    return true;	
 }
 
 function updateRate()
 {
     rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText = rateval;
-}
-
-function validate()
-{
-
 }
